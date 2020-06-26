@@ -17,6 +17,10 @@ const routes: Routes = [
   },  {
     path: 'info-empresa',
     loadChildren: () => import('./info-empresa/info-empresa.module').then( m => m.InfoEmpresaPageModule)
+  },
+  {
+    path: 'crear-usuario',
+    loadChildren: () => import('./crear-usuario/crear-usuario.module').then( m => m.CrearUsuarioPageModule)
   }
 
 ];
