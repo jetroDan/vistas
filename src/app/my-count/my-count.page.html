@@ -1,5 +1,5 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar >
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
       <ion-title>Mi cuenta</ion-title>
@@ -15,72 +15,75 @@
 <ion-content [fullscreen]="true">
 
   <ion-body>
-<p id="contacto"><b>Información de Contacto</b> </p>
+<p id="datos"><b>Información de Contacto</b> </p>
   <ion-form>
   <ion-div class="infoEmpleado" id="idInfoEmpleado">
-  <ion-label>Nombre del Empleado</ion-label>
-  <br>
-  <input type="text" name="name" id="name" required placeholder="Nombre del Empleado">
+  <p><ion-label>Nombre del Empleado</ion-label></p>
+  <input type="text" name="name" id="name" size="40px" required placeholder="Nombre del Empleado">
   </ion-div>
-  <br><br>
+
   <ion-div class="DireccionEmpleado" id="idDireccionEmpleado">
-  <ion-label>Dirección</ion-label>
-  <br>
-  <input type="text" name="name" id="name" required placeholder="Dirección">
+  <p><ion-label>Dirección</ion-label></p>
+
+  <input type="text" name="name" id="name" size="40px" required placeholder="Dirección">
   </ion-div>
-  <br><br>
   <ion-div class="infotelEmp" id="idInfoTelEmp">
-  <ion-label >Teléfono Celular</ion-label>
-  <br>
-  <input type="text" name="name" id="name" required placeholder="Télefono celular">
-  </ion-div>
-  <br><br>
-  <p>Cuentas con celular</p>
-  <br><br>
-  <p>Datos del Vehículo</p>
-  <ion-div>
-  <ion-label>Tipo de vehículo</ion-label>
-  <br>
-  <select name="TipoVehiculo" id="idTipoVehiculo">
-    <option value="Camíon">Camión</option>
-    <option value="Triler">Traile</option>
-    <option value="Automovil">Automovil</option>
+  <p><ion-label >Teléfono Celular</ion-label></p>
 
-  </select>
+  <input type="text" name="name" id="name" size="40px" required placeholder="Télefono celular">
   </ion-div>
-  <br><br>
-  <ion-div>
-  <ion-label>Marca del vehículo</ion-label>
-  <br>
-  <select name="categoriasServicios" id="catServicios">
-    <option value="Ford">Ford</option>
-    <option value="Nissa">Nissan</option>
-    <option value="RAM">RAM</option>
 
-  </select>
-  </ion-div>
-  <br><br>
-  <ion-div>
-  <ion-label>Modelo del vehículo</ion-label>
-  <br>
-  <select name="categoriasServicios" id="catServicios">
-    <option value="F100">F100</option>
-    <option value="N200">N200</option>
-    <option value="RAM F50">RAM F50</option>
+  <p id="select"><ion-label>Cuentas con vehículo</ion-label>
 
-  </select>
+<input type="checkbox" name="si" value="si"  id="catServicios2">
+  </p>
+  <p id="datos"><b>Datos del Vehículo</b></p>
+  <ion-div>
+  <p id="select"><ion-label>Tipo de vehículo</ion-label>
+    <select name="TipoVehiculo" id="catServicios1" >
+      <option value="Camíon">Camión</option>
+      <option value="Triler">Trailer</option>
+      <option value="Automovil">Automovil</option>
+
+    </select>
+  </p>
+
   </ion-div>
-  <br><br>
+  <ion-div>
+  <p id="select"><ion-label>Marca del vehículo</ion-label>
+    <select name="categoriasServicios" id="catServicios2">
+      <option value="Ford">Ford</option>
+      <option value="Nissa">Nissan</option>
+      <option value="RAM">RAM</option>
+
+    </select>
+  </p>
+
+  </ion-div>
+  <ion-div>
+  <p id="select"><ion-label>Modelo del vehículo</ion-label>
+    <select name="categoriasServicios" id="catServicios3">
+      <option value="F100">F100</option>
+      <option value="N200">N200</option>
+      <option value="RAM F50">RAM F50</option>
+
+    </select>
+  </p>
+
+  </ion-div>
+
   <ion-div class="infotelEmp" id="idInfoTelEmp">
-  <ion-label >Placas del vehículo</ion-label>
-  <input type="text" name="name" id="name" required placeholder="Placas del vehículo">
+  <p><ion-label >Placas del vehículo</ion-label>
+    <input type="text" name="name" id="name" size="20px" required placeholder="Placas del vehículo">
+
+  </p>
   </ion-div>
-  <br><br>
+
 
   <div>
-    <label >Color del vehículo</label>
-      <input type="color" id="head" name="head"
-             value="#e66465">
+    <p id="select"><label id="colorVei">Color del vehículo</label><input type="color" id="head" size="40px"  name="head"
+           value="#e66465"></p>
+
 
   </div>
 

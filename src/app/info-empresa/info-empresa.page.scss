@@ -1,3 +1,6 @@
+ion-menu-button {
+  color: var(--ion-color-danger);
+}
 div.toolbar-container{
   background-color: black;
 }
@@ -6,16 +9,59 @@ ion-content{
   margin-left: 40px;
 
 }
-ion-body{
-  background-color: #f2f2f2;
-}
+
 .textHorario{
   text-align: center;
 }
+#info-contact{
+  text-align: center;
+  position: relative;
+  float: right;
+};
+#name,{
+  border-radius: 5px;
+  border-right-color: red;
+  border-top-color: red;
+  border-left-color: red;
+  border-bottom-color:red;
+  padding-left: 15px;
+  margin-left:15px;
+
+
+}
+p{
+  display: block;
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 
 ion-label{
-  background-color:#D8D8D8;
-  width: inherit;
+  padding-left: 15px;
+  background-color: #D8D8D8;
+  border: 0;
+
+}
+#volume{
+  margin-left: 15px;
+}
+#idFormaPago{
+  margin-block-start: 0.0em;
+  margin-block-end: 0.0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  background-color: #D8D8D8;
+  padding-left: 15px;
+  margin-left: 140px;
+  border-right-color: red;
+  border-top-color: red;
+  border-left-color: red;
+  border-bottom-color:red;
+  margin-left: 15px;
+  padding-right: 270px;
+
+
 }
 input{
   color:red;
@@ -25,7 +71,7 @@ ion-card{
   margin-bottom: 50px;
 }
 #pinfoempresa,p{
-  text-align: center;
+
   background-color: #D8D8D8;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -33,3 +79,13 @@ ion-card{
 #distancia{
   margin-bottom: 100px;
 }
+#datos{
+  background-color: #D8D8D8;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+
+/**probando**/

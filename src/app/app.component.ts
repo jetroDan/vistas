@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
     },
     {
       title: 'Mensajes',
-      url: '/folder/Favorites',
+      url: '/mensajes',
       icon: 'mail'
     },
     {
