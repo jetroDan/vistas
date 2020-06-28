@@ -7,118 +7,104 @@
 
     </ion-buttons>
   </ion-toolbar>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">-->
 
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" padding>
+  <ion-body>
+<p id="pinfoempresa"><b>Información de Empresa </b> </p>
+<ion-form>
+  <ion-div class="infoNameEmp" id="idInfoNameEmp">
+<ion-label>Nombre de la Empresa</ion-label>
+<br>
+<input type="text" name="name" id="name" required placeholder="Nombre de la Empresa">
+</ion-div>
+<br><br>
+<ion-div class="infoDireccionEmp" id="idInfoDireccionEmp">
+<ion-label>Dirección</ion-label>
+<br>
+<input type="text" name="name" id="name" required placeholder="Dirección">
+</ion-div>
+<br><br>
+<ion-div class="infoHorarioEmp" id="idInfoHorarioEmp">
+<ion-label id="textHorario">Horarios</ion-label>
+<br>
+<input type="text" name="name" id="name" required placeholder="De esta hora "> <input type="text" name="name" id="name" required placeholder="A esta hora">
+</ion-div>
+<br><br>
+<ion-div class="infoRfcEmp" id="idInfoRfcEmp">
+<ion-label>RFC</ion-label>
+<br>
+<input type="text" name="name" id="name" required placeholder="RFC">
+</ion-div>
+<br><br>
+<ion-div class="infotelEmp" id="idInfoTelEmp">
+<ion-label id="textHorario">Teléfonos</ion-label>
+<br>
+<input type="text" name="name" id="name" required placeholder="Télefono 1 "> <input type="text" name="name" id="name" required placeholder="Télefono 2">
+</ion-div>
+<br><br>
+<ion-div class="infoPaginaEmp" id="idInfoPaginaEmp">
+<ion-label>Página web</ion-label>
+<br>
+<input type="text" name="name" id="name" required placeholder="Página web">
+</ion-div>
+<br><br>
+<ion-div>
+  <ion-label>Categoría de Servicios</ion-label>
+  <br>
+<select name="categoriasServicios" id="catServicios">
+    <option value="Servicio 1">Servicio 1</option>
+    <option value="Servicio 2">Servicio 2</option>
+    <option value="Servicio 3">Servicio 3</option>
+
+</select>
+</ion-div>
+<br><br>
+<ion-div>
+  <ion-label>Tipo de Servicios</ion-label>
+  <br>
+<select name="categoriasTipoServicios" id="TipoServicios">
+    <option value="Servicio 1">Servicio 1</option>
+    <option value="Servicio 2">Servicio 2</option>
+    <option value="Servicio 3">Servicio 3</option>
+
+</select>
+</ion-div>
+<br><br>
+<ion-div class="rangoPrec" id="idRangoPrec">
+<ion-label id="textHorario">Teléfonos</ion-label>
+<br>
+<input type="text" name="name" id="name" required placeholder="Desde "> <input type="text" name="name" id="name" required placeholder="Desde">
+</ion-div>
+<br><br>
+<ion-div>
+  <ion-label>Forma de pago</ion-label>
+  <br>
+<select name="FormaPago" id="idFormaPago">
+    <option value="Debito">Debito</option>
+    <option value="Credito">Credito</option>
+    <option value="Efectivo">Efectivo</option>
+
+</select>
+<br>
+<input type="text" name="name" id="name" required placeholder="CLABE "> <input type="text" name="name" id="name" required placeholder="Número de Tarjeta">
+
+</ion-div>
+<br><br>
+
+<div id="distancia">
+  <ion-label>Límite de distancia</ion-label>
+  <br>
+  <input type="range" id="volume" name="volume"
+         min="0" max="100" >
+
+</div>
 
 
-  <ion-form class="" action="index.html" method="post">
-  <div class="form-group row">
-    <label for="input" class="col-sm-2 col-form-label">Nombre de la empresa</label>
-    <div class="col-sm-10">
-      <input class="form-control form-control-sm" type="text" placeholder="Nombre de la empresa">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="inputPassword" class="col-sm-2 col-form-label">Dirección</label>
-    <div class="col-sm-10">
-      <input class="form-control form-control-sm" type="text" placeholder="Dirección">
-    </div>
-  </div>
-  <div class="form-row">
-    <label for="inputPassword" class="col-sm-2 col-form-label">Horarios</label>
+</ion-form>
 
-     <div class="col">
-       <input type="text" class="form-control" placeholder="De esta hora">
-     </div>
-     <div class="col">
-       <input type="text" class="form-control" placeholder="A esta hora">
-     </div>
-   </div>
-  <div class="form-group row">
-    <label for="inputPassword" class="col-sm-2 col-form-label">RFC</label>
-    <div class="col-sm-10">
-      <input class="form-control form-control-sm" type="text" placeholder="RFC">
-    </div>
-  </div>
-  <div class="form-row">
-    <label for="inputPassword" class="col-sm-2 col-form-label">Teléfonos</label>
-
-     <div class="col">
-       <input type="text" class="form-control" placeholder="Teléfono 1">
-     </div>
-     <div class="col">
-       <input type="text" class="form-control" placeholder="Teléfono 2">
-     </div>
-   </div>
-
-   <div class="form-group row">
-     <label for="input" class="col-sm-2 col-form-label">Página Web</label>
-     <div class="col-sm-10">
-       <input class="form-control form-control-sm" type="text" placeholder="Página web">
-     </div>
-   </div>
-
-   <div class="form-group row">
-     <label for="inputPassword" class="col-sm-2 col-form-label">Categoría de Servicio</label>
-     <div class="col-sm-10">
-       <select class="form-control form-control-sm">
-       <option>Hogar</option>
-       <option>Automotriz</option>
-       <option>Eventos</option>
-       </select>
-       </div>
-     </div>
-
-     <div class="form-group row">
-       <label for="inputPassword" class="col-sm-2 col-form-label">Tipo de Servicio</label>
-       <div class="col-sm-10">
-         <select class="form-control form-control-sm">
-         <option>Servicio 1</option>
-         <option>Servicio 2</option>
-         <option>Servicio 3</option>
-         </select>
-         </div>
-       </div>
-
-       <div class="form-row">
-         <label for="inputPassword" class="col-sm-2 col-form-label">Rango de Precios</label>
-
-          <div class="col">
-            <input type="text" class="form-control" placeholder="Desde">
-          </div>
-          <div class="col">
-            <input type="text" class="form-control" placeholder="Hasta">
-          </div>
-        </div>
-
-        <div class="form-group row">
-          <label for="inputPassword" class="col-sm-2 col-form-label">Forma de Pago</label>
-          <div class="col-sm-10">
-            <select class="form-control form-control-sm">
-            <option>Efectivo</option>
-            <option>Tarjeta de debito</option>
-            <option>Tarjeta de credito</option>
-            </select>
-            </div>
-          </div>
-          <div class="form-row">
-
-             <div class="col">
-               <input type="text" class="form-control" placeholder="Clabe">
-             </div>
-             <div class="col">
-               <input type="text" class="form-control" placeholder="Número de tarjeta">
-             </div>
-           </div>
-
-           <label for="customRange2">Limite de distancia</label>
-<input type="range" class="custom-range" min="0" max="10" id="customRange2">
-
-
-
-  </ion-form>
+</ion-body>
 
 </ion-content>

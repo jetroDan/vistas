@@ -3,7 +3,7 @@ ion-menu ion-content {
 }
 
 ion-menu.md ion-content {
-  
+
   --padding-start: 8px;
   --padding-end: 8px;
   --padding-top: 20px;
@@ -117,4 +117,8 @@ ion-note {
 
 ion-item.selected {
   --color: var(--ion-color-primary);
+}
+#cerrSesion{
+  padding-left: 60px;
+
 }

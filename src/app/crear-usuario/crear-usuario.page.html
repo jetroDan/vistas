@@ -7,83 +7,91 @@
 
     </ion-buttons>
   </ion-toolbar>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
 </ion-header>
 
 <ion-content [fullscreen]="true">
 
-<p>Crear Usuarios</p>
+  <ion-body>
+<p>Crear Usuarios </p>
+  <ion-form>
+  <ion-div class="infoEmpleado" id="idInfoEmpleado">
+  <ion-label>Nombre del Empleado</ion-label>
+  <br>
+  <input type="text" name="name" id="name" required placeholder="Nombre del Empleado">
+  </ion-div>
+  <br><br>
+  <ion-div class="DireccionEmpleado" id="idDireccionEmpleado">
+  <ion-label>Dirección</ion-label>
+  <br>
+  <input type="text" name="name" id="name" required placeholder="Dirección">
+  </ion-div>
+  <br><br>
+  <ion-div class="infotelEmp" id="idInfoTelEmp">
+  <ion-label >Teléfono Celular</ion-label>
+  <br>
+  <input type="text" name="name" id="name" required placeholder="Télefono celular">
+  </ion-div>
+  <br><br>
+  <p>Cuentas con vehículo</p>
+  <br><br>
+  <p>Datos del Vehículo</p>
+  <ion-div>
+  <ion-label>Tipo de vehículo</ion-label>
+  <br>
+  <select name="TipoVehiculo" id="idTipoVehiculo">
+    <option value="Camíon">Camión</option>
+    <option value="Triler">Traile</option>
+    <option value="Automovil">Automovil</option>
 
-  <ion-form class="" action="index.html" method="post">
-  <div class="form-group row">
-    <label for="inputPassword" class="col-sm-2 col-form-label">Nombre del empleado</label>
-    <div class="col-sm-10">
-      <input class="form-control form-control-sm" type="text" placeholder="Nombre del empleado">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="inputPassword" class="col-sm-2 col-form-label">Dirección</label>
-    <div class="col-sm-10">
-      <input class="form-control form-control-sm" type="text" placeholder="Dirección">
-    </div>
-  </div>
-  <div class="form-group row">
-    <label for="inputPassword" class="col-sm-2 col-form-label">Teléfono celular</label>
-    <div class="col-sm-10">
-      <input class="form-control form-control-sm" type="text" placeholder="Teléfono celular">
-    </div>
-  </div>
+  </select>
+  </ion-div>
+  <br><br>
+  <ion-div>
+  <ion-label>Marca del vehículo</ion-label>
+  <br>
+  <select name="categoriasServicios" id="catServicios">
+    <option value="Ford">Ford</option>
+    <option value="Nissa">Nissan</option>
+    <option value="RAM">RAM</option>
 
+  </select>
+  </ion-div>
+  <br><br>
+  <ion-div>
+  <ion-label>Modelo del vehículo</ion-label>
+  <br>
+  <select name="categoriasServicios" id="catServicios">
+    <option value="F100">F100</option>
+    <option value="N200">N200</option>
+    <option value="RAM F50">RAM F50</option>
 
-  <p>Datos del vehículo</p>
-  <div class="form-group row">
-    <label for="inputPassword" class="col-sm-2 col-form-label">Tipo de vehículo</label>
-    <div class="col-sm-10">
-      <select class="form-control form-control-sm">
-      <option>Vehiculo 1</option>
-      <option>Vehiculo 2</option>
-      <option>Vehiculo 3</option>
-      </select>
-      </div>
-    </div>
-    <div class="form-group row">
-      <label for="inputPassword" class="col-sm-2 col-form-label">Marca del vehículo</label>
-      <div class="col-sm-10">
-        <select class="form-control form-control-sm">
-        <option>Marca 1</option>
-        <option>Marca 2</option>
-        <option>Marca 3</option>
-        </select>
-        </div>
-      </div>
-      <div class="form-group row">
-        <label for="inputPassword" class="col-sm-2 col-form-label">Modelo del vehículo</label>
-        <div class="col-sm-10">
-          <select class="form-control form-control-sm">
-          <option>Modelo 1</option>
-          <option>Modelo 2</option>
-          <option>Modelo 3</option>
-          </select>
-          </div>
-        </div>
-        <div class="form-group row">
-          <label for="inputPassword" class="col-sm-2 col-form-label">Placas del vehiculo</label>
-          <div class="col-sm-10">
-            <input class="form-control form-control-sm" type="text" placeholder=" ">
-          </div>
-        </div>
-        <div class="form-group row">
-          <label for="inputPassword" class="col-sm-2 col-form-label">Color de vehículo</label>
-          <div class="col-sm-10">
-            <select class="form-control form-control-sm">
-            <option>Azul</option>
-            <option>Rojo</option>
-            <option>Blanco</option>
-            </select>
-            </div>
-          </div>
+  </select>
+  </ion-div>
+  <br><br>
+  <ion-div class="infotelEmp" id="idInfoTelEmp">
+  <ion-label >Placas del vehículo</ion-label>
+  <input type="text" name="name" id="name" required placeholder="Placas del vehículo">
+  </ion-div>
+  <br><br>
+
+  <div>
+    <label >Color del vehículo</label>
+      <input type="color" id="head" name="head"
+             value="#e66465">
+
+  </div>
 
   </ion-form>
+  <ion-card>
+    <img id="ine" src="\assets\img\ine.PNG" alt="">
+    <ion-card-content>
+    <ion-tittle>
+
+    </ion-tittle>
+  </ion-card-content>
+  </ion-card>
+
+  </ion-body>
 
 </ion-content>

@@ -14,12 +14,12 @@ export class AppComponent implements OnInit {
   public appPages = [
     {
       title: 'Mi cuenta',
-      url: '/folder/Inbox',
+      url: '/my-count',
       icon: 'person'
     },
     {
       title: 'Mi empresa',
-      url: '/folder/Outbox',
+      url: '/info-empresa',
       icon: 'business'
     },
     {
@@ -29,12 +29,12 @@ export class AppComponent implements OnInit {
     },
     {
       title: 'Crear usuarios de Empleados',
-      url: '/folder/Archived',
+      url: '/crear-usuario',
       icon: 'person-add'
     },
     {
       title: 'Servicios',
-      url: '/folder/Trash',
+      url: '/servicios',
       icon: 'reader'
     },
     {

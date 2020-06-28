@@ -21,7 +21,28 @@ const routes: Routes = [
   {
     path: 'crear-usuario',
     loadChildren: () => import('./crear-usuario/crear-usuario.module').then( m => m.CrearUsuarioPageModule)
-  }
+  },
+  {
+    path: 'servicios',
+    loadChildren: () => import('./servicios/servicios.module').then( m => m.ServiciosPageModule)
+  },
+  {
+    path: 'servicios-de-hogar',
+    loadChildren: () => import('./servicios-de-hogar/servicios-de-hogar.module').then( m => m.ServiciosDeHogarPageModule)
+  },
+  {
+    path: 'plancontratado',
+    loadChildren: () => import('./plancontratado/plancontratado.module').then( m => m.PlancontratadoPageModule)
+  },
+  {
+    path: 'invitaciones-contrataciones',
+    loadChildren: () => import('./invitaciones-contrataciones/invitaciones-contrataciones.module').then( m => m.InvitacionesContratacionesPageModule)
+  },
+  {
+    path: 'agenda',
+    loadChildren: () => import('./agenda/agenda.module').then( m => m.AgendaPageModule)
+  },
+
 
 ];
 
