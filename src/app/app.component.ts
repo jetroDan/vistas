@@ -44,12 +44,12 @@ export class AppComponent implements OnInit {
     },
     {
       title: 'Invitaciones/Contrataciones',
-      url: '/folder/Spam',
+      url: '/invitaciones-contrataciones',
       icon: 'mail-open'
     },
     {
       title: 'Agenda',
-      url: '/folder/Spam',
+      url: '/agenda',
       icon: 'calendar'
     //  <ion-icon name="person-sharp"></ion-icon>
     }
