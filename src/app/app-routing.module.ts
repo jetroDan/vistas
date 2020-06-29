@@ -34,10 +34,7 @@ const routes: Routes = [
     path: 'invitaciones-contrataciones',
     loadChildren: () => import('./invitaciones-contrataciones/invitaciones-contrataciones.module').then( m => m.InvitacionesContratacionesPageModule)
   },
-  {
-    path: 'agenda',
-    loadChildren: () => import('./agenda/agenda.module').then( m => m.AgendaPageModule)
-  },
+
   {
     path: 'mensajes',
     loadChildren: () => import('./mensajes/mensajes.module').then( m => m.MensajesPageModule)
