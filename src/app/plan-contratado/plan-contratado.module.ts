@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { PlancontratadoPageRoutingModule } from './plancontratado-routing.module';
+import { PlanContratadoPageRoutingModule } from './plan-contratado-routing.module';
 
-import { PlancontratadoPage } from './plancontratado.page';
+import { PlanContratadoPage } from './plan-contratado.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PlancontratadoPageRoutingModule
+    PlanContratadoPageRoutingModule
   ],
-  declarations: [PlancontratadoPage]
+  declarations: [PlanContratadoPage]
 })
-export class PlancontratadoPageModule {}
+export class PlanContratadoPageModule {}

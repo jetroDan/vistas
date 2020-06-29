@@ -31,10 +31,6 @@ const routes: Routes = [
     loadChildren: () => import('./servicios-de-hogar/servicios-de-hogar.module').then( m => m.ServiciosDeHogarPageModule)
   },
   {
-    path: 'plancontratado',
-    loadChildren: () => import('./plancontratado/plancontratado.module').then( m => m.PlancontratadoPageModule)
-  },
-  {
     path: 'invitaciones-contrataciones',
     loadChildren: () => import('./invitaciones-contrataciones/invitaciones-contrataciones.module').then( m => m.InvitacionesContratacionesPageModule)
   },
@@ -45,6 +41,10 @@ const routes: Routes = [
   {
     path: 'mensajes',
     loadChildren: () => import('./mensajes/mensajes.module').then( m => m.MensajesPageModule)
+  },
+  {
+    path: 'plan-contratado',
+    loadChildren: () => import('./plan-contratado/plan-contratado.module').then( m => m.PlanContratadoPageModule)
   },
 
 

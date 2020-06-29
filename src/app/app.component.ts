@@ -39,7 +39,7 @@ export class AppComponent implements OnInit {
     },
     {
       title: 'Paquete de contrato',
-      url: '/folder/Spam',
+      url: '/plan-contratado',
       icon: 'receipt'
     },
     {
