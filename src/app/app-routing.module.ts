@@ -26,10 +26,7 @@ const routes: Routes = [
     path: 'servicios',
     loadChildren: () => import('./servicios/servicios.module').then( m => m.ServiciosPageModule)
   },
-  {
-    path: 'servicios-de-hogar',
-    loadChildren: () => import('./servicios-de-hogar/servicios-de-hogar.module').then( m => m.ServiciosDeHogarPageModule)
-  },
+
   {
     path: 'invitaciones-contrataciones',
     loadChildren: () => import('./invitaciones-contrataciones/invitaciones-contrataciones.module').then( m => m.InvitacionesContratacionesPageModule)
@@ -42,6 +39,22 @@ const routes: Routes = [
   {
     path: 'plan-contratado',
     loadChildren: () => import('./plan-contratado/plan-contratado.module').then( m => m.PlanContratadoPageModule)
+  },
+  {
+    path: 'agenda',
+    loadChildren: () => import('./agenda/agenda.module').then( m => m.AgendaPageModule)
+  },
+  {
+    path: 'servicios-auto',
+    loadChildren: () => import('./servicios-auto/servicios-auto.module').then( m => m.ServiciosAutoPageModule)
+  },
+  {
+    path: 'servicios-event',
+    loadChildren: () => import('./servicios-event/servicios-event.module').then( m => m.ServiciosEventPageModule)
+  },
+  {
+    path: 'servicios-hogar',
+    loadChildren: () => import('./servicios-hogar/servicios-hogar.module').then( m => m.ServiciosHogarPageModule)
   },
 
 
