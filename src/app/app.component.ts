@@ -49,7 +49,7 @@ export class AppComponent implements OnInit {
     },
     {
       title: 'Agenda',
-      url: '/agenda',
+      url: '/home',
       icon: 'calendar'
     //  <ion-icon name="person-sharp"></ion-icon>
     }

@@ -1,0 +1,109 @@
+ion-menu-button {
+  color: var(--ion-color-danger);
+}
+
+
+ion-title.info-contact{
+  text-align: center;
+  position: relative;
+  float: right;
+};
+#name,{
+  border-radius: 5px;
+  border-right-color: red;
+  border-top-color: red;
+  border-left-color: red;
+  border-bottom-color:red;
+  padding-left: 15px;
+  margin-left:15px;
+
+
+}
+#iconCar{
+  padding-left: 100px;
+  width: 40px;
+  height: 30px;
+}
+p{
+  display: block;
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+ion-label{
+  padding-left: 15px;
+  background-color: #D8D8D8;
+  border: 0;
+
+}
+#color{
+  margin-right: -40px;
+}
+#colorVei{
+  margin-right: 20px;
+  padding-left: 15px;
+}
+#catServicios1{
+
+  background-color: #D8D8D8;
+  padding-left: 15px;
+  margin-left: 160px;
+  border-left-color: red;
+  color: red;
+
+}
+#catServicios2{
+
+  background-color: #D8D8D8;
+  padding-left: 15px;
+  margin-left: 165px;
+  border-left-color: red;
+  color: red;
+
+}
+#catServicios3{
+
+  background-color: #D8D8D8;
+  padding-left: 15px;
+  margin-left: 140px;
+  border-left-color: red;
+  color: red;
+}
+#head{
+
+  margin-left: 180px;
+}
+#select{
+  color: red;
+}
+#select1{
+  color: red;
+}
+#toggler-car{
+  padding-left: 170px;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.textHorario{
+  text-align: center;
+}
+#contacto,p{
+  background-color: #D8D8D8;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#datos{
+  background-color: #D8D8D8;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+ion-card{
+  padding-left: 50px;
+  margin-bottom: 50px;
+}

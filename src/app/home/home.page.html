@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      <ion-title>Agenda</ion-title>
+
+      <ion-icon ion-id="bell-noty" name="notifications" position="right"></ion-icon>
+
+    </ion-buttons>
+  </ion-toolbar>
+  <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">-->
+
+</ion-header>
+
+<ion-content >
+
+  <calendar [eventSource]="eventSource"
+       [calendarMode]="calendar.mode"
+       [currentDate]="calendar.currentDate"
+       (onCurrentDateChanged)="onCurrentDateChanged($event)"
+  (onRangeChanged)="reloadSource(startTime, endTime)"
+       (onEventSelected)="onEventSelected($event)"
+       (onTitleChanged)="onViewTitleChanged($event)"
+       (onTimeSelected)="onTimeSelected($event)"
+       startHour="6"
+       endHour="20"
+       step="30"
+       startingDayWeek="1">
+
+   </calendar>
+
+</ion-content>

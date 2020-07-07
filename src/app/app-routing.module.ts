@@ -56,6 +56,10 @@ const routes: Routes = [
     path: 'servicios-hogar',
     loadChildren: () => import('./servicios-hogar/servicios-hogar.module').then( m => m.ServiciosHogarPageModule)
   },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },
 
 
 ];
